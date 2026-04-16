@@ -1,0 +1,16 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__ . '/../vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+use OpenMicroservice\InitCommand;
+use OpenMicroservice\AddServiceCommand;
+
+$application = new Application('Open Microservice CLI', '0.0.0');
+
+// Enregistrement des commandes
+$application->add(new InitCommand());
+$application->add(new AddServiceCommand());
+
+$application->run();

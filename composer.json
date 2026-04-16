@@ -1,0 +1,20 @@
+{
+    "name": "didon-code/open-microservice",
+    "description": "Create microservice",
+    "autoload": {
+        "psr-4": {
+            "OpenMicroservice\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "DidonCode",
+            "email": "76182682+DidonCode@users.noreply.github.com"
+        }
+    ],
+    "bin": ["bin/open-ms"],
+    "require": {
+        "php": ">=8.0",
+        "symfony/console": "^6.0"
+    }
+}
