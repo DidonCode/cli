@@ -1,5 +1,5 @@
 {
-    "name": "didon-code/open-microservice",
+    "name": "open-microservice",
     "description": "Create microservice",
     "type": "library",
     "autoload": {
