@@ -1,6 +1,7 @@
 {
     "name": "didon-code/open-microservice",
     "description": "Create microservice",
+    "type": "library",
     "autoload": {
         "psr-4": {
             "OpenMicroservice\\": "src/"

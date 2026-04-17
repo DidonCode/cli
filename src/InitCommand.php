@@ -8,7 +8,7 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Input\InputArgument;
 
-#[AsCommand(name: 'open-microservice:init', description: 'Initialise la structure de base du projet')]
+#[AsCommand(name: 'init', description: 'Initialise la structure de base du projet')]
 class InitCommand extends Command
 {
     protected function configure(): void
@@ -18,12 +18,13 @@ class InitCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        $path = rtrim($input->getArgument('path'), '/');
+        $path = rtrim((string) $input->getArgument('path'), '/\\');
 
         $dirs = [
-            "$path/services",
-            "$path/config",
-            "$path/gateway",
+            $path . '/services',
+            $path . '/config',
+            $path . '/gateway',
+            $path . '/public',
         ];
 
         foreach ($dirs as $dir) {

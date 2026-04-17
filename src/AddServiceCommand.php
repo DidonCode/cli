@@ -8,7 +8,7 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Input\InputArgument;
 
-#[AsCommand(name: 'open-microservice:add', description: 'Ajoute un nouveau service')]
+#[AsCommand(name: 'add', description: 'Ajoute un nouveau service')]
 class AddServiceCommand extends Command
 {
     protected function configure(): void
