@@ -4,7 +4,7 @@
 // Find autoload.php in both local dev and global install contexts
 $autoloadPaths = [
     __DIR__ . '/../vendor/autoload.php',      // Local dev: bin/../vendor/autoload.php
-    __DIR__ . '/../../vendor/autoload.php',   // Global install: vendor/didon-code/open-microservice/bin/../../vendor/autoload.php
+    __DIR__ . '/../../../autoload.php',   // Global install: vendor/didon-code/open-microservice/bin/../../vendor/autoload.php
 ];
 
 $autoloadFound = false;
